@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <link href="{% static 'todolist/css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'todolist/css/reset.css' %}" rel="stylesheet">
+  <title>ToDoリスト</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>ToDo List</h1>
+    <div class="menu">
+      <a>Menu</a>
+    </div>
+  </div>
+  <!-- <h3>{{mess}}</h3> -->
+  <div class="inner">
+    <div class="task__list">
+      <ul>
+        {% for task in tasks %}
+        <li>{{ task.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  
+<div class="input__form">
+  <form>
+    <label for="title"></label>
+    <input type="text" id="title" name="title" placeholder="タスクの追加">
+
+    <input type="submit" value="決定">
+  </form>
+</div>
+</div>
+</body>
+
+</html>

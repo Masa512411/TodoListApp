@@ -1,0 +1,14 @@
+.menu{
+    width: auto;
+    
+    & a{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 60px;
+        float: right;
+        outline: none;
+        //text-align: right;
+    }
+    
+}
